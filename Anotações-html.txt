@@ -1,0 +1,88 @@
+Comunicação Cliente Servidor
+    - Requisição (Request);
+    - Resposta (Response);
+
+URL  -> Localizador de recursos.
+HTTP -> Protocolo de comunicação (Protocolo de transferência de hyper texto).
+HTML -> Linguagem de marcação de texto. É um arquivo de texto com marcações que dão significado ao conteúdo.
+
+Netscape vs Internet Explorer.
+    -> Os navegadores não tinham padrão nenhum
+
+W3C -> Convênio para padronização de marcação dos navegadores.
+
+TAGS
+br -> quebra de linha
+hr -> quebra linha e coloca uma linha horizontal
+h1 -> Representa título de nivel 1. Ex: <h1>Isso é um título</h1>
+   -> Hierarquia de informação. 
+p -> Representa paragrafo. Ex: <p>Isso é um parágrafo</p>
+b, strong -> Negrito
+i, em -> itálico, colocar enfase
+ul -> Lista não ordenadas
+ol -> Lista ordenada
+li -> Item da lista
+a -> link / ancora. <a href="">
+  -> href - Pagina que será aberta
+  -> target="_" - Abrir em outra aba
+  -> title - título
+link -> href e rel (arquivos externos)
+img -> src (caminho img) e alt (título img)
+script -> src (caminho arquivo)
+title -> nome da página
+
+Diferença de uma página e um site?
+    - Página repesenta apenas uma página, como o nome diz, porém o site é um conjunto de páginas (pasta)
+
+---- Tags semanticas que substituem as div com id especifico
+- header
+- nav
+- main
+- footer
+
+---- outras tags
+- section - marcar relevante da area de conteúdo 
+- article - marcar conteúdo principal
+- aside - conteúdo a parte do principal do site
+
+---- tags não semanticas
+- div
+- span - dentro de um texto
+
+---- LISTAS 
+- listas aninhadas -> <ul> e <li>
+- listas de definição -> <dl> <dt> <dd>
+
+---- TABELAS
+Exibição de dados tabulares
+
+Tags -> table, caption, tr, td
+Ex: tabela 1x1
+<table>
+    <caption>Título da tabela</caption>
+    <tr>
+        <td>
+        </td>
+    </tr>
+</table>
+
+Para mesclar linhas e colunas utiliza a propriedade: colspan e rowspan
+
+Tagas com mais semântica para tabulações. O tfoot tbm poode ser utilizado, porém antes do tbody (padrão)
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Luis Santos</td>
+        </tr>
+    </tbody>
+</table>
+
+A propriedade borda tem dois aspectos: separate e collapse
+
+---- FORMULÁRIOS
+tags -> forms, input

@@ -1,0 +1,178 @@
+<!-- DOCTYPE informa a versão do HTML que deve ser renderizada -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pagina de exemplo estrutura básica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luisão" />
+    <meta name="description" content="Lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, " />
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .div1 {
+        width: 150px;
+        height: 50px;
+        background: red;
+        transform: translate(50%, 50%);
+      }
+      .div2 {
+        width: 150px;
+        height: 50px;
+        background: blue;
+        position: relative;
+        left: 50%;
+        /* top: 30%; */
+      }
+
+      .div3 {
+        width: 50%;
+        overflow: hidden;
+        border: solid 2px black;
+      }
+      .div3-interna {
+        background: yellow;
+        transform: translate(80%, 25px);
+      }
+
+      .div4 {
+        width: 50%;
+        overflow: hidden;
+        border: solid 2px black;
+      }
+      .div4-interna {
+        background: yellow;
+        transform: rotate(-25deg);
+      }
+
+      .div5 {
+        width: 50%;
+        overflow: hidden;
+        border: solid 2px black;
+      }
+      .div5-interna {
+        background: yellow;
+        transform: rotate(30deg);
+        transform-origin: left top;
+      }
+
+      .div6 {
+        width: 50%;
+        overflow: hidden;
+        border: solid 2px black;
+      }
+      .div6-interna {
+        background: yellow;
+        transform: rotate(30deg) translate(50px);
+      }
+
+      .div7 {
+        width: 50%;
+        overflow: hidden;
+        border: solid 2px black;
+      }
+      .div7-interna {
+        background: yellow;
+        transform: translate(50px) rotate(30deg);
+      }
+
+      .div8 {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        transform: skew(10deg, 50deg);
+      }
+
+      .div9 {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        transform: scale(0.5) translateX(50%);
+        transition: transform 0.8s;
+      }
+
+      .div9:hover {
+        transform: translateX(50%) scale(2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <hr />
+
+    <div class="div3">
+      <div class="div3-interna">conteúdo qualquer</div>
+      <p>
+        O pedaço padrão de Lorem Ipsum usado desde 1500 é reproduzido abaixo
+        para os interessados. As seções 1.10.32 e 1.10.33 de "de Finibus Bonorum
+        et Malorum" por Cícero também são reproduzidas em sua forma original
+        exata, acompanhadas por versões em inglês da tradução de 1914 por H.
+        Rackham.
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="div4">
+      <div class="div4-interna">conteúdo qualquer</div>
+      <p>
+        O pedaço padrão de Lorem Ipsum usado desde 1500 é reproduzido abaixo
+        para os interessados. As seções 1.10.32 e 1.10.33 de "de Finibus Bonorum
+        et Malorum" por Cícero também são reproduzidas em sua forma original
+        exata, acompanhadas por versões em inglês da tradução de 1914 por H.
+        Rackham.
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="div5">
+      <div class="div5-interna">conteúdo qualquer</div>
+      <p>
+        O pedaço padrão de Lorem Ipsum usado desde 1500 é reproduzido abaixo
+        para os interessados. As seções 1.10.32 e 1.10.33 de "de Finibus Bonorum
+        et Malorum" por Cícero também são reproduzidas em sua forma original
+        exata, acompanhadas por versões em inglês da tradução de 1914 por H.
+        Rackham.
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="div6">
+      <div class="div6-interna">conteúdo qualquer</div>
+      <p>
+        O pedaço padrão de Lorem Ipsum usado desde 1500 é reproduzido abaixo
+        para os interessados. As seções 1.10.32 e 1.10.33 de "de Finibus Bonorum
+        et Malorum" por Cícero também são reproduzidas em sua forma original
+        exata, acompanhadas por versões em inglês da tradução de 1914 por H.
+        Rackham.
+      </p>
+    </div>
+    <hr />
+
+    <div class="div7">
+      <div class="div7-interna">conteúdo qualquer</div>
+      <p>
+        O pedaço padrão de Lorem Ipsum usado desde 1500 é reproduzido abaixo
+        para os interessados. As seções 1.10.32 e 1.10.33 de "de Finibus Bonorum
+        et Malorum" por Cícero também são reproduzidas em sua forma original
+        exata, acompanhadas por versões em inglês da tradução de 1914 por H.
+        Rackham.
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="div8">div 8</div>
+    <div class="div9">div 9</div>
+  </body>
+</html>

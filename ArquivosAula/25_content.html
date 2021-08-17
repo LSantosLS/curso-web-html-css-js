@@ -1,0 +1,76 @@
+<!-- DOCTYPE informa a versão do HTML que deve ser renderizada -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pagina de exemplo estrutura básica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luisão" />
+    <meta name="description" content="Lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, " />
+
+    <style>
+      div {
+        border: 3px solid red;
+        padding: 25px;
+        position: relative;
+        margin: 25px;
+      }
+
+      div:before {
+        content: "before: ";
+        background: #ccc;
+      }
+
+      div:after {
+        content: "";
+        background: red;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>texto principal da div</div>
+    <article>
+      <p>antes do título</p>
+      <h3>Titulo</h3>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+    </article>
+
+    <ul>
+      <li><a href="#">link falso</a></li>
+      <li><a href="#">link falso</a></li>
+      <li><a href="http://serfrontend.com" target="_blank">link externo</a></li>
+      <li>
+        <a href="http://serfrontend.com/qq.pdf" target="_blank">link externo</a>
+      </li>
+      <li>
+        <a href="23_transition.html" title="Veja exercicio anterior"
+          >link interno</a
+        >
+      </li>
+    </ul>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

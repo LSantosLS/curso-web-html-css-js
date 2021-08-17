@@ -1,0 +1,89 @@
+<!-- DOCTYPE informa a versão do HTML que deve ser renderizada -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pagina de exemplo estrutura básica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luisão" />
+    <meta name="description" content="Lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, " />
+
+    <style>
+      /* label {
+        display: inline-block;
+      } */
+      input[type="checkbox"] {
+        width: 100px;
+        height: 100px;
+      }
+      input[type="checkbox"]:checked {
+        width: 50px;
+        height: 50px;
+      }
+
+      button:disabled {
+        background: blue;
+      }
+
+      p {
+        background: red;
+      }
+
+      p:empty:before {
+        content: "paragrafo vazio";
+      }
+
+      input[type="text"] {
+        display: block;
+        padding: 0.8em;
+        margin-bottom: 10px;
+      }
+      input[type="text"]:focus {
+        background: #ccc;
+      }
+      input[type="text"]:read-only {
+        background: yellow;
+      }
+
+      a:focus,
+      a:hover,
+      div:focus,
+      div:hover {
+        background: red;
+      }
+
+      input::placeholder {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <label><input type="checkbox" value="Sim" /> Aceito o contrato</label>
+
+    <button>Vai</button>
+    <button disabled>Volta</button>
+
+    <p>Paragrafo 1</p>
+    <p></p>
+    <hr />
+
+    <input type="text" />
+    <input type="text" value="valor inicial" />
+    <input type="text" value="valor inicial" readonly />
+    <input type="text" value="valor inicial" disabled />
+    <input type="text" placeholder="valor inicial" />
+
+    <ul>
+      <li><a href="#">link falso</a></li>
+      <li><a href="#">link falso</a></li>
+      <li><a href="#">link falso</a></li>
+      <li><a href="#">link falso</a></li>
+    </ul>
+
+    <div tabindex="1">div 1</div>
+    <div tabindex="2">div 1</div>
+    <div tabindex="3">div 1</div>
+  </body>
+</html>

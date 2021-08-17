@@ -1,0 +1,96 @@
+<!-- DOCTYPE informa a versão do HTML que deve ser renderizada -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pagina de exemplo estrutura básica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luisão" />
+    <meta name="description" content="Lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, " />
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      a {
+        display: block;
+        margin: 10px;
+        position: relative;
+      }
+
+      a img {
+        width: 100%;
+        display: block;
+      }
+
+      a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: all 0.5s;
+      }
+
+      a:hover::before {
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      a::after {
+        opacity: 0;
+      }
+      a:hover::after {
+        content: "Veja +";
+        display: block;
+        position: absolute;
+        border: 2px solid white;
+        color: white;
+        top: 50%;
+        left: 50%;
+        padding: 10px 20px;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Efeitos hover Thumbnails</h1>
+
+    <section>
+      <article>
+        <a href="#">
+          <img src="imagens/thumbs/01.jpg" alt="" />
+        </a>
+      </article>
+      <article>
+        <a href="#">
+          <img src="imagens/thumbs/02.jpg" alt="" />
+        </a>
+      </article>
+      <article>
+        <a href="#">
+          <img src="imagens/thumbs/03.jpg" alt="" />
+        </a>
+      </article>
+      <article>
+        <a href="#">
+          <img src="imagens/thumbs/04.jpg" alt="" />
+        </a>
+      </article>
+      <article>
+        <a href="#">
+          <img src="imagens/thumbs/05.jpg" alt="" />
+        </a>
+      </article>
+      <article>
+        <a href="#">
+          <img src="imagens/thumbs/06.jpg" alt="" />
+        </a>
+      </article>
+    </section>
+  </body>
+</html>

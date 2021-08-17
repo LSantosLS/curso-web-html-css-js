@@ -1,0 +1,57 @@
+<!-- DOCTYPE informa a versão do HTML que deve ser renderizada -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Gradiente</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luisão" />
+    <meta name="description" content="Lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, " />
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: orangered;
+        background-image: linear-gradient(
+            to top,
+            rgba(255, 0, 0, 0.24) 200px,
+            rgba(0, 0, 255, 0.38)
+          ),
+          /* linear-gradient(to left bottom, blue, transparent), */
+            url(imagens/bg.jpg);
+        background-size: auto, 100% 100%;
+      }
+
+      #radius {
+        background: orange;
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        /* border-radius: 25px 50px 75px 100px; */
+        border-radius: 50px 100px / 100px 50px;
+
+        box-shadow: 10px 10px 10px 20px black;
+      }
+
+      h1 {
+        font-family: sans-serif;
+        font-size: 50px;
+        text-align: center;
+        text-shadow: -1px 1px 0 #ccc, -2px 2px 0 orange;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS efeitos</h1>
+
+    <div id="radius"></div>
+  </body>
+</html>

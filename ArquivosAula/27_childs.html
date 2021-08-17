@@ -1,0 +1,48 @@
+<!-- DOCTYPE informa a versão do HTML que deve ser renderizada -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pagina de exemplo estrutura básica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luisão" />
+    <meta name="description" content="Lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, " />
+
+    <style>
+      div p:nth-of-type(3) {
+        color: red;
+      }
+
+      .destaque {
+        background: #ddd;
+      }
+
+      .destaque:nth-of-type(1) {
+        color: green;
+      }
+
+      .destaque:first-child {
+        color: blue;
+      }
+      p:last-child {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <p class="destaque">Meu paragrafo</p>
+      <p>Meu paragrafo</p>
+      <hr />
+      <p class="destaque">Meu paragrafo</p>
+      <p>Meu paragrafo</p>
+      <hr />
+      <p>Meu paragrafo</p>
+      <p class="destaque">Meu paragrafo</p>
+      <hr />
+      <p>Meu paragrafo</p>
+      <p>Meu paragrafo</p>
+    </div>
+  </body>
+</html>

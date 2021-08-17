@@ -1,0 +1,36 @@
+<!-- DOCTYPE informa a versão do HTML que deve ser renderizada -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Transition</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luisão" />
+    <meta name="description" content="Lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, " />
+
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+
+        transition-property: width, height;
+        transition-duration: 0.5s, 3s;
+        transition-timing-function: cubic-bezier(0.67, -0.36, 0.5, 1.5), linear;
+        transition-delay: 0s, 0.8;
+        /* transition-timing-function: ease-out; */
+      }
+
+      div:hover {
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Estrutura basica</h1>
+
+    <div>1</div>
+  </body>
+</html>

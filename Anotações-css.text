@@ -1,0 +1,192 @@
+---- ARQUIVO CSS     
+h1 {} - indica que vai aplicar estivo no componente h1
+.classe_h1 {} -  indica que vai aplicar css na classe .classe_h1
+#id_h1 {} - indica que vai aplicar css no id id_h1
+
+---- FONT
+    font-family
+    font-size
+    font-style
+    font-variant
+
+---- TEXT
+    text-align - direita, esquerda
+    text-decoration - sublinhado
+    text-ident - espaçamento de parágrafo
+    text-transform - upper, low
+
+---- RGB
+    - três pares de cor
+0 - Menor valor
+F - Maior valor
+
+__-__-__ => Vermelho-Verde-Azul
+
+#FFFFFF -> Branco
+#FF0000 -> Vermelho
+#00FF00 -> Verde
+#0000FF -> Azul
+#000000 -> Preto
+
+color - cor da fonte
+background-color - cor de fundo
+
+---- Margin / padding
+margin-top: 10px;
+margin-right: 5px;
+margin-bottom: 10px;
+margin-left: 5px;
+
+-> margin: 10px 5px 10px 5px;
+-> margin: 10px 5px 10px;
+-> margin: 10px 5px;
+-> margin: 10px;
+
+---- Border
+border-style: dotted;
+border-width: 5px;
+border-color: red;
+
+-> border: dotted 5px red;
+
+---- IMAGEM 
+
+background-image: url(); - Colocar imagem através do CSS
+
+tipos de imagens
+    - jpg / jpeg;
+    - png;
+    - git;
+    - svg;
+    - webp;
+
+---- DISPLAY
+- inline
+- block
+- inline-block
+- none
+
+---- Box Model
+
+box-sizing: 
+content-box -> não é incluído o no tamanho final o padding size, border e margin
+padding-box -> incluem padding size
+border-box -> incluem padding size e propriedade border
+
+---- POSITION
+- static 
+- relative
+- absolute
+- fixed
+
+z-index -> posicinamente de profundidade
+
+---- TRANSITION
+transition: <cor> <segundos> <tipo>
+<tipo> -> linear, 
+Ex: transition: color 0.3s linear;
+Ex: transition: height 0.3s;
+
+---- OVERFLOW
+- visible -> deixa visivel 
+- hidden -> esconde ultrapassar altura ou compimento (height width)
+- scrool -> habilita a barra de scrolagem 
+- auto -> adiciona barra de rolagem se for necessário
+
+---- Efeitos em CSS
+border-radius -> coloca cantos arredondados.
+    -> left-top right-top right-bottom left-bottom (eixo x) / (eixo y)
+
+bax-shadow -> Cria uma figura espelhada com as dimenões informada.
+    -> eixo-x eixo-y sombreamento aumentoSombra cor
+
+text-shadowm -> Sombra no texto
+
+gradiente: lineares e gradias
+
+transition: mudança suave de propriedade
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+
+---- zebrar tabela
+nth-child(odd) -> Impares
+nth-child(even) -> Pares
+
+---- Seletores compostos
+- seletores por tag
+article a -> Pega todos os descendêntes de article;
+article p > b -> Pega todos os filhos direto de p descendêntes de article;
+article h3 + p -> Pega o próximo irmão adjacente de h3;
+article h3 ~ p -> Pega os próximos irmãos do h3;
+
+- seletores por atributos
+a[title] -> Seleciota todo "a" que possui atributo "title";
+img[alt=""] -> Seleciona todo "img" com o "alt" igual a "";
+a[href^:"http"] -> Seleciona todo "a" que possui "href" iniciado com "http";
+img[src$:".png"] -> Seleciona todo "img" que possui "src" terminado com ".png";
+:not(a) -> Seleciona toda tag que não seja "a";
+
+---- Content, Before, After
+div:before {
+    content: "";
+}
+
+---- Pseudo-Classes
+link: https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes
+
+Índice de pseudo-classes padrão
+:active
+:checked
+:default (en-US)
+:dir() (en-US)
+:disabled
+:empty
+:enabled
+:first (en-US)
+:first-child
+:first-of-type
+:fullscreen
+:focus
+:hover
+:indeterminate (en-US)
+:in-range (en-US)
+:invalid
+:lang() (en-US)
+:last-child
+:last-of-type
+:left (en-US)
+:link
+:not()
+:nth-child()
+:nth-last-child()
+:nth-last-of-type() (en-US)
+:nth-of-type()
+:only-child
+:only-of-type
+:optional
+:out-of-range
+:read-only (en-US)
+:read-write
+:required
+:right (en-US)
+:root
+:scope (en-US)
+:target
+:valid
+:visited
+
+Índice de pseudo-elementos padrão
+::after
+::before
+::first-letter
+::first-line
+::selection
+::placeholder
+
+---- transformações 2D
+Tipos: translate, skew, rotate e scale
+translate -> Desloca elemento no eixo X e Y
+rotate -> rotaciona o elemento conforme o "deg" informado
+skew -> distorce elemento
+scale -> altera a escala do elemento

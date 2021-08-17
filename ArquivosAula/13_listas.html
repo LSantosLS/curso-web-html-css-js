@@ -1,0 +1,63 @@
+<!-- DOCTYPE informa a versão do HTML que deve ser renderizada -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Listas</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luisão" />
+    <meta name="description" content="Lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, " />
+
+    <style>
+      li ul {
+        height: 0;
+        overflow: hidden;
+      }
+
+      li:hover {
+        background: #ccc;
+      }
+
+      li:hover ul {
+        height: 50px;
+        transition: height 0.5s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li>Item 1</li>
+      <li>
+        Item 2
+        <ul>
+          <li>item 2.1</li>
+          <li>item 2.2</li>
+        </ul>
+      </li>
+      <li>Item 3</li>
+    </ul>
+
+    <hr />
+
+    <dl>
+      <dt>HTML</dt>
+      <dd>Linguagem de marcação de Hypertexto</dd>
+
+      <dt>CSS</dt>
+      <dd>Linguagem para criação de folhas de estilos</dd>
+    </dl>
+
+    <hr />
+
+    <dl>
+      <dt>WWW</dt>
+      <dt>Internet</dt>
+      <dd>Rede mundial de computadores</dd>
+
+      <dt>Javascript</dt>
+      <dd>Linguagem script para internet</dd>
+      <dd>Script para rodar no browser</dd>
+    </dl>
+  </body>
+</html>

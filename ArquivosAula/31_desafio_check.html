@@ -1,0 +1,79 @@
+<!-- DOCTYPE informa a versão do HTML que deve ser renderizada -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pagina de exemplo estrutura básica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luisão" />
+    <meta name="description" content="Lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, " />
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      label {
+        margin-right: 30px;
+      }
+
+      label span {
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+        background: #ccc;
+        border-radius: 15px;
+      }
+
+      label span::before {
+        content: "";
+        display: block;
+        background: #eee;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 5px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      label input:checked + span::before {
+        content: "";
+        transform: translateX(30px);
+        background: red;
+      }
+
+      label input:focus + span {
+        box-shadow: 0 0 0 1px red;
+      }
+
+      input {
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Desafio Check</h1>
+
+    <label>
+      <input type="checkbox" />
+      <span></span>
+      Esport
+    </label>
+
+    <label>
+      <input type="checkbox" />
+      <span></span>
+      Politica
+    </label>
+
+    <label>
+      <input type="checkbox" />
+      <span></span>
+      Educação
+    </label>
+  </body>
+</html>
